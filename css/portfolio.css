@@ -396,12 +396,13 @@ body {
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 13%);
     transform: scale(1.1);
 }
-.clientele {
-    background: url(../images/dt-contact.jpg)no-repeat center top;
-    background-size: 100% 100%;
-}
+
 .border-blue-dashed {
-    border: 2px dashed #1239ac;
+  border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
+  border-radius: 5px; /* this doesn't work */
+  border-width: 2px;
+  border-style: solid;
+  padding: 5px;
 }
 
 @media only screen and (max-width: 991px){
@@ -413,51 +414,3 @@ body {
 /******Clientele End*********/
 	
 	
-/******SideBar End******/
-.dt-title {
-  text-align: center;
-}
-.dt-title h5 {
-  color: #ffb200;
-  text-transform:uppercase;
-  font-size:24px;
-  font-weight:600;
-}
-.dt-title h1 {
-  color: #1239ac;
-  text-transform: uppercase;
-  font-size: 45px;
-  font-weight: 700;
-  line-height: 1.1em;
-}
-@media (max-width: 1199px){
-.sidebar-open {
-padding-left: 0;
-}
-.sidebar {
-top: 0;
-height: 100vh;
-}
-}
-@media (max-width: 820px){
-.dt-implement-box:after{
-  display:none;
-}
-.dt-implement-box .dt-implement-circle .implement-badge {
-  right: 30%;
-}
-}
-@media (max-width: 576px){
-.dt-title h1{
-  font-size:32px;
-}
-.dt-title h5{
-  font-size:18px;
-}
-.dt-implement-box .dt-implement-circle .implement-badge {
-  right: 32%;
-}
-.dt-banner {
-  height: 251px;
-}
-}
